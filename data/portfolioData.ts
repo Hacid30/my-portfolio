@@ -1,14 +1,14 @@
-import { Project, Education } from "@/types/portfolio";
+import { Project, Education, HeroLinks } from "@/types/portfolio";
 
 export const projects: Project[] = [
     {
-    id: 1,
-    title: "CineMatch",
-    description: "A modern and responsive movie discovery application built with...",
-    image: "/assets/img/cine_match_demo.png",
-    technologies: ["Next", "JavaScript (ES6+)", "Tailwind CSS", "TMDB API", "Git & GitHub"],
-    demo: "https://cinematch-git-main-hector-hacid.vercel.app/",
-    githubUrl: "https://github.com/Hacid30/cinematch"
+        id: 1,
+        title: "CineMatch",
+        description: "A modern and responsive movie discovery application built with...",
+        image: "/assets/img/cine_match_demo.png",
+        technologies: ["Next", "JavaScript (ES6+)", "Tailwind CSS", "TMDB API", "Git & GitHub"],
+        demo: "https://cinematch-git-main-hector-hacid.vercel.app/",
+        githubUrl: "https://github.com/Hacid30/cinematch"
     },
     {
         id: 2,
@@ -57,5 +57,23 @@ export const education: Education[] = [
         title: 'INTRODUCCIÓN A LA PROGRAMACIÓN EN JAVASCRIPT',
         institution: 'EL MINTIC Y LA UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS',
         date: 'DICIEMBRE DE 2023'
+    }
+];
+
+export const heroLink: HeroLinks[] = [
+    {
+        id: 1,
+        label: 'Mis proyectos',
+        link: '#projects'
+    },
+    {
+        id: 2,
+        label: 'Contacto / Redes',
+        link: '#contact'
+    },
+    {
+        id: 3,
+        label: 'Educación y Certificaciones',
+        link: '#education'
     }
 ];

@@ -14,3 +14,9 @@ export interface Education {
     institution: string;
     date: string;
 }
+
+export interface HeroLinks {
+    id: number;
+    label: string;
+    link: string;
+}
