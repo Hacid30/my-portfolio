@@ -5,8 +5,8 @@ import { projects, education, heroLink } from "@/data/portfolioData";
 
 export default function Home() {
   return (
-    <div>
-      <main className="bg-slate-950 text-slate-100 max-w-4xl mx-auto px-4 min-h-screen py-12">
+    <div className="bg-slate-950 text-slate-100 min-h-screen">
+      <main className="max-w-6xl mx-auto px-4 py-12">
         <section>
         <h1 className="text-2xl text-sky-400 font-bold ">Héctor Hacid Julio Meza - Desarrollador Frontend Junior</h1>
         <p className="text-slate-400 mb-4" >Desarrollador Frontend Junior dedicado a construir interfaces web modernas con React, TypeScript y Next.js.</p>
@@ -25,7 +25,7 @@ export default function Home() {
           <hr className="border-slate-800"/>
           <section id="projects">
             <h2 className="text-xl font-bold text-slate-200 mb-6 mt-3">MIS PROYECTOS</h2>
-            <div className="grid md:grid-cols-2 gap-6 mb-6">
+            <div className="grid md:grid-cols-3 gap-6 mb-6">
             {projects.map((project) => (
                 <ProjectCard
                   key={project.id}
@@ -38,7 +38,7 @@ export default function Home() {
         <hr className="border-slate-800"/>
         <section id="education">
           <h2 className="text-xl font-bold text-slate-200 mb-6 mt-3" >EDUCACIÓN Y CERTIFICACIONES</h2>
-          <div className="grid md:grid-cols-2 gap-6 mb-6">
+          <div className="grid md:grid-cols-3 gap-6 mb-6">
           {education.map((edu) => (
             <EducationCard
               key={edu.id}
